@@ -23,7 +23,10 @@
 #
 # Example commands:
 #
-#     pacman -S --noconfirm --needed gufw geany chromium
+   pacman -S --noconfirm --needed fish qemu-full
+   systemctl enable --now libvirtd
+   usermod -aG kvm $USER
+   usermod -aG libvirt $USER 
 #     pacman -Rsn --noconfirm xed
 #     systemctl enable ufw
 #
@@ -54,7 +57,7 @@
 #        "install_mode"     (one of: online, offline, community)
 #    before starting the calamares installer.
 #    For example:
-#        bash ~/user_commands.bash --iso-config online
+    bash ~/user_commands.bash --iso-config online
 #
 #----------------------------------------------------------------------------------
 # Full example (to try it, remove the first '#' from the lines below):
